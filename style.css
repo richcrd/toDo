@@ -1,0 +1,156 @@
+:root {
+    --primary: #98aec2af;
+    --secondary: #033F49;
+    --light: #fff;
+    --dark: #222;
+    --disabled: #e7e7e7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100%;
+    background-color: var(--disabled);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+::first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    width: 100%;
+    background-color: var(--light);
+    max-width: 350px;
+}
+.date {
+    display: flex;
+    align-items: center;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--disabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--disabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.task.done {
+    background-color: var(--disabled);
+}
+
+.taskText {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.done .taskText{
+    color: var(--dark);
+    text-decoration: line-through;
+}
+
+.deleteButton {
+    background-color: #d71818;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.taskTextContainer {
+    flex: 1;
+    overflow: hidden;
+}
+
+.footer-content {
+    background-color: #b7b7b7;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrapper {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}

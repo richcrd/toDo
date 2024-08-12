@@ -1,4 +1,4 @@
-# Calculadora
+# Lista de Tareas - ToDo
 Diseño de Lista de Tareas o ToDo
 Utilizando HTML como lenguaje de marcado para crear y estructurar la página web y CSS para definir los estilos y diseños.
 JavaScript utilizado principalmente para crear funciones y utilizar algoritmos propios de la programción para lograr nuestro objetivo de crear y eliminar tareas.
